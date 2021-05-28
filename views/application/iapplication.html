@@ -1,0 +1,28 @@
+<div class="col-md-3" id='left_menu'>
+	<h2>Application</h2>
+	<ul class="pitem">
+		<li><a href="javascript:void(0)" onclick="open1('/tutorial/app/crud/index.html',this)">Basic CRUD</a></li>
+		<li><a href="javascript:void(0)" onclick="open1('/tutorial/app/crud2/index.html',this)">CRUD DataGrid</a></li>
+		<li><a href="javascript:void(0)" onclick="open1('/tutorial/app/crud3/index.html',this)">Expand Row Form</a></li>
+		<li><a href="javascript:void(0)" onclick="open1('/tutorial/app/portal/index.html',this)">Portal</a></li>
+		<li><a href="javascript:void(0)" onclick="open1('/tutorial/app/pivotgrid/index',this)">Pivot Grid</a></li>
+	</ul>
+</div>
+<div class="col-md-9" id='app_body'>
+<h2 class="col-md-12">Basic CRUD Application</h2>	
+	<p>Click the buttons on datagrid toolbar to do crud actions.</p>
+		
+		    <table id="dg" title="My Users" class="easyui-datagrid" style="width:700px;height:250px"
+            url="get_users.php"
+            toolbar="#toolbar" pagination="true"
+            rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+            <tr>
+                <th field="firstname" width="50">First Name</th>
+                <th field="lastname" width="50">Last Name</th>
+                <th field="phone" width="50">Phone</th>
+                <th field="email" width="50">Email</th>
+            </tr>
+        </thead>
+    </table>
+</div>
